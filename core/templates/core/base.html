@@ -1,0 +1,170 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>{% block title %} COLAC {% endblock %}</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  
+  <!-- Description and keywords -->
+  <meta name="keywords" content="COLAC, CAZERO, COLANE, Medicina, Congresso, Liga Acadêmica">
+  <meta name="description" content="O COLAC é um evento realizado pelo Centro Acadêmico Zenon Rocha (CAZERO) e tem como ideia unir e incentivar as ligas acadêmicas de medicina do Piauí">
+
+  <!-- Favicons -->
+  <link href="{% static 'core/img/favicon.png' %}" rel="icon">
+  <link href="{% static 'core/img/apple-touch-icon.png' %}" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Roboto:100,300,400,500,700|Philosopher:400,400i,700,700i" rel="stylesheet">
+
+  <!-- Bootstrap css -->
+  <!-- <link rel="stylesheet" href="{% static 'core/css/bootstrap.css' %}"> -->
+  <link href="{% static 'core/lib/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+  <link href="{% static 'core/lib/owlcarousel/assets/owl.carousel.min.css' %}" rel="stylesheet">
+  <link href="{% static 'core/lib/owlcarousel/assets/owl.theme.default.min.css' %}" rel="stylesheet">
+  <link href="{% static 'core/lib/font-awesome/css/font-awesome.min.css' %}" rel="stylesheet">
+  <link href="{% static 'core/lib/animate/animate.min.css' %}" rel="stylesheet">
+  <link href="{% static 'core/lib/modal-video/css/modal-video.min.css' %}" rel="stylesheet">
+
+  <!-- Main Stylesheet File -->
+  <link href="{% static 'core/css/style.css' %}" rel="stylesheet">
+
+  <!-- =======================================================
+    Theme Name: eStartup
+    Theme URL: https://bootstrapmade.com/estartup-bootstrap-landing-page-template/
+    Author: BootstrapMade.com
+    License: https://bootstrapmade.com/license/
+  ======================================================= -->
+</head>
+
+<body>
+
+  <header id="header" class="header header-hide">
+    <div class="container">
+
+      <div id="logo" class="pull-left">
+        <a href="{% url 'core:home' %}">
+          <img src="{% static 'core/img/logo.png' %}" ago_frontlt="COLAC">
+        </a>
+        <!-- <h1><a href="#body" class="scrollto"><span>e</span>Startup</a></h1> -->
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <a href="#body"><img src="{% static 'core/img/logo.png' %}" alt="" title="" /></a>-->
+      </div>
+
+      {% block menu %}
+        <nav id="nav-menu-container">
+          <ul class="nav-menu">
+            <li class="menu-active"><a href="#hero">Home</a></li>
+            <li><a href="#about-us">Sobre o evento</a></li>
+            <li><a href="#who-we-are">Quem Somos</a></li>
+            <li><a href="#get-started">Público Alvo</a></li>
+            
+            <li class="menu-has-children"><a href="#">Editais</a>
+              <ul>
+                <li><a href="{% url 'core:home' %}">Edital de Trabalhos VI COLAC</a></li>
+                <li><a href="{% url 'core:home' %}">Edital Painel das Ligas</a></li>
+                <li><a href="{% url 'core:home' %}">Edital Cursos Práticos</a></li>
+                <li><a href="{% url 'core:home' %}">Edital Inscrições Inclusivas</a></li>
+                <li><a href="{% url 'core:home' %}">Edital Submissão de Atividades Culturais</a></li>
+              </ul>
+            </li>
+
+            <li><a href="#video">Inscrição</a></li>
+            <li><a href="#newsletter">Contato</a></li>
+          </ul>
+        </nav><!-- #nav-menu-container -->
+      {% endblock %}
+    </div>
+  </header><!-- #header -->
+
+  <!--==========================
+    Block Body
+  ============================-->
+  {% block body %} {% endblock %}
+
+  <!--==========================
+    Newsletter Section
+  ============================-->
+  <section id="newsletter" class="newsletter text-center wow fadeInUp">
+    <div class="overlay padd-section">
+      <div class="container section-title newsletter-title text-center">
+
+        <h2>Contatos </h2>
+
+        <ul class="list-unstyled">
+          <li><a href="mailto:comunicacao.colac@gmail.com" target="_blank"><i class="fa fa-envelope"></i></a></li>
+          <li><a href="https://www.instagram.com/sextocolac/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+          <li><a href="https://wa.me/5586999284080" target="_blank"><i class="fa fa-whatsapp"></i></a></li>
+        </ul>
+
+      </div>
+    </div>
+  </section>
+
+  <!--==========================
+    Footer
+  ============================-->
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-md-6 col-lg-6">
+          <div class="footer-logo">
+
+            <img src="{% static 'core/img/logo.png' %}" ago_frontlt="COLAC">
+            <!-- <a class="navbar-brand" href="#">eStartup</a> -->
+            <p>O COLAC é um evento realizado pelo Centro Acadêmico Zenon Rocha (CAZERO) e tem como ideia unir e incentivar as ligas acadêmicas de medicina do Piauí.</p>
+
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-6">
+          <div class="footer-logo">
+            <p>
+              <i class="fa fa-map-marker"></i> <strong>Endereço:</strong> Av. Frei Serafim, 2280, Centro, Teresina - PI <strong>CEP:</strong> 64000-020 <br>
+              <i class="fa fa-envelope"></i> <strong>E-mail:</strong> comunicacao.colac@gmail.com
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="copyrights">
+      <div class="container">
+        <p class="text-center">&copy; Copyrights <i class="fa fa-cogs"></i> STI-UFPI. Direitos Reservados.</p>
+        <div class="credits">
+          <!--
+            All the links in the footer should remain intact.
+            You can delete the links only if you purchased the pro version.
+            Licensing information: https://bootstrapmade.com/license/
+            Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=eStartup
+          -->
+          Template <a href="https://bootstrapmade.com/" target="_blank">BootstrapMade</a>
+        </div>
+      </div>
+    </div>
+
+  </footer>
+
+
+
+  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+  <!-- JavaScript Libraries -->
+  <script src="{% static 'core/lib/jquery/jquery.min.js' %}"></script>
+  <script src="{% static 'core/lib/jquery/jquery-migrate.min.js' %}"></script>
+  <script src="{% static 'core/lib/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'core/lib/superfish/hoverIntent.js' %}"></script>
+  <script src="{% static 'core/lib/superfish/superfish.min.js' %}"></script>
+  <script src="{% static 'core/lib/easing/easing.min.js' %}"></script>
+  <script src="{% static 'core/lib/modal-video/js/modal-video.js' %}"></script>
+  <script src="{% static 'core/lib/owlcarousel/owl.carousel.min.js' %}"></script>
+  <script src="{% static 'core/lib/wow/wow.min.js' %}"></script>
+  <!-- Template Main Javascript File -->
+  <script src="{% static 'core/js/main.js' %}"></script>
+
+</body>
+</html>

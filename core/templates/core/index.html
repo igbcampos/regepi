@@ -1,0 +1,153 @@
+{% extends 'core/base.html' %}
+{% load staticfiles %}
+{% block title %} COLAC {% endblock %}
+
+{% block body %} 
+	
+	<!--==========================
+	Hero Section
+	============================-->
+	<section id="hero" class="wow fadeIn">
+		<div class="hero-container">
+			<h1>Fórum da Rede de Gestão Pública do Piauí</h1>
+			<h2>Ano 2019 - 2ª Edição</h2>
+			<img src="{% static 'core/img/logo_front.png' %}" ago_frontlt="COLAC">
+			<!-- <a href="#get-started" class="btn-get-started scrollto">Get Started</a> -->
+			<div class="btns">
+				<a href="#"><i class="fa fa-calendar fa-3x"></i> 2, 3 e 4 de outubro de 2019 | UFPI</a>
+			</div>
+		</div>
+	</section><!-- #hero -->
+
+  <!--==========================
+    About Us Section
+  ============================-->
+	<section id="about-us" class="about-us padd-section wow fadeInUp">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-md-5 col-lg-5">
+					<img src="{% static 'core/img/about.png' %}" alt="Sobre o Evento">
+				</div>
+				<div class="col-md-7 col-lg-7">
+					<div class="about-content">
+
+						<h2>Sobre o COLANE/COLAC </h2>
+						<p class="about">
+						O COLAC surgiu com a ideia de unir e incentivar as ligas acadêmicas do Piauí, atrelado a isso trouxe uma proposta inovadora de um congresso permeado de atividades praticas desenvolvidas pelos membros das ligas, associando o ensino teórico ao prático. Com a apresentação de trabalhos na forma de tema livre oral e pôsteres estimula a produção de pesquisas científicas, além de trazer profissionais renomados com palestras de temas atuais e importantes para o cenário da saúde. A partir de 2017 o evento expandiu sua influencia para todo o nordeste, contando com a participação de ligas de vários estados, tornando-se COLANE.
+						</p>
+						<p class="about">
+						Por acreditar na necessidade de atualização constante de estudantes e profissionais que atuam na área da Medicina, bem como na importância do estímulo ao desenvolvimento científico do nosso estado, e da necessidade de atividade praticas associado ao conhecimento teórico o Centro Acadêmico Zenon Rocha orgulhosamente apresenta o III Congresso Nordestino de Ligas Acadêmicas de Medicina e VI Congresso de Ligas Acadêmicas do Piauí (VI COLAC). O evento será realizado na Universidade Federal do Piauí, entre os dias 06 e 09 de junho de 2019.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+  <!--==========================
+    Quem Somos Section
+  ============================-->
+
+  <section id="who-we-are" class="about-us padd-section wow fadeInUp">
+    <div class="container">
+      <div class="row justify-content-center">
+      
+        <div class="col-md-7 col-lg-7">
+          <div class="about-content">
+
+            <h2>Quem Somos </h2>
+            <p class="about">
+                O COLAC é realizado pelo Centro Acadêmico Zenon Rocha (CAZERO) do curso de medicina da Universidade Federal do Piauí, regida por estatuto próprio visando lutar pelos interesses dos estudantes de medicina da UFPI, além da organização e apoio a eventos médicos. É tradicionalmente formado por membros do CAZERO e estudantes escolhidos por meio de processo seletivo e assim contar com a colaboração de novos membros de escolas médicas do Nordeste. Contamos esse ano com a presença da Dra. Bárbara Barros como artista homenageado(a).
+            </p>
+          </div>
+        </div>
+          
+        <div class="col-md-5 col-lg-5">
+          <img src="{% static 'core/img/mulher.png' %}" alt="Quem Somos">
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!--==========================
+    Video Section
+  ============================-->
+
+  <section id="video" class="text-center wow fadeInUp">
+    <div class="overlay">
+      <div class="container-fluid container-full section-title text-center">
+
+		<div class="col-md-12 col-lg-12">
+
+			<h2>Inscrição </h2>
+			<p>As inscrições e submissões de trabalhos para o evento serão através do site <strong>EventMaster</strong> e pode ser acessado clicando abaixo.</p>
+
+			<a href="https://eventmaster.com.br/event/vicolac/site/content/inicio" target="_blank" class="btn-get-started scrollto">Inscrição e Submissão</a>
+
+		</div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!--==========================
+    Get Started Section
+  ============================-->
+  <section id="get-started" class="padd-section text-center wow fadeInUp">
+
+    <div class="container">
+      <div class="section-title text-center">
+
+        <h2>Público Alvo </h2>
+        <p class="separator">Estudantes e profissionais que compõem o principal público do COLANE/COLAC.</p>
+
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+
+        <div class="col-md-6 col-lg-3">
+          <div class="feature-block">
+
+            <img src="{% static 'core/img/svg/student.png' %}" alt="img" class="img-fluid">
+            <h4>Estudantes da Saúde</h4>
+
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <div class="feature-block">
+
+            <img src="{% static 'core/img/svg/residence.png' %}" alt="img" class="img-fluid">
+            <h4>Residentes</h4>
+
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <div class="feature-block">
+
+            <img src="{% static 'core/img/svg/doctor.png' %}" alt="img" class="img-fluid">
+            <h4>Médicos</h4>
+
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <div class="feature-block">
+
+            <img src="{% static 'core/img/svg/peoples.png' %}" alt="img" class="img-fluid">
+            <h4>Outros Profissionais da Área</h4>
+            
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </section>
+
+{% endblock %}
