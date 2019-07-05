@@ -13,7 +13,7 @@ SECRET_KEY = 'n%b*wv(v6i5dm!ysxn#tv1%m(quvh-=mjdgl*3yfma&=1ty6r%'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['regepi.ufpi.br','www.regepi.ufpi.br']
 
 
 # Application definition
@@ -64,8 +64,12 @@ WSGI_APPLICATION = 'regepi.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'regepi',
+        'USER': 'regepi',
+        'PASSWORD': 'q94)]Jj%',
+        'HOST': '127.0.0.1',
+        'PORT': '5432',
     }
 }
 
@@ -103,7 +107,8 @@ USE_L10N = True
 USE_TZ = True
 
 
-# Static files (CSS, JavaScript, Images)
-# https://docs.djangoproject.com/en/2.1/howto/static-files/
-
+#arquivos estaticos e media na pasta var/www/html/nae
 STATIC_URL = '/static/'
+STATIC_ROOT = '/var/www/html/regepi/static/'
+MEDIA_URL = '/media/'
+MEDIA_ROOT = '/var/www/html/regepi/media/'
