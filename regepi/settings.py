@@ -13,7 +13,7 @@ SECRET_KEY = 'n%b*wv(v6i5dm!ysxn#tv1%m(quvh-=mjdgl*3yfma&=1ty6r%'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['regepi.ufpi.br','www.regepi.ufpi.br']
+ALLOWED_HOSTS = ['127.0.0.1', 'regepi.ufpi.br','www.regepi.ufpi.br']
 
 
 # Application definition
