@@ -63,6 +63,8 @@
             <li><a href="#get-started">Palestrantes</a></li>
             <li><a href="#schedule">Programação</a></li>
             <li><a href="#newsletter">Contato</a></li>
+            <li><a href="#mapa">Mapa</a></li>
+            <li><a href="http://www.ppgp.ufpi.br/">REGEPI 2018</a></li>
           </ul>
         </nav><!-- #nav-menu-container -->
       {% endblock %}
@@ -94,21 +96,20 @@
   <!--==========================
     Footer
   ============================-->
-  <footer class="footer">
+  <footer class="footer" id='mapa'>
     <div class="container">
       <div class="row">
-
         <div class="col-md-6 col-lg-6">
           <div class="footer-logo">
             <p>Organização</p>
             <div class="row justify-content-center">
               <img src="https://i.imgur.com/Qqx8wlA.png" ago_frontlt="Universidade Federal do Piauí" style="height: 100px">
-              <img src="https://i.imgur.com/nGoliKp.png" ago_frontlt="PPGP" style="height: 100px">
+              <img src="https://i.imgur.com/DvlQLHI.png" ago_frontlt="PPGP" style="height: 100px">
+              <!-- https://i.imgur.com/nGoliKp.png -->
             </div>
             <br />
             <!-- <img src="{% static 'core/img/logo.png' %}" ago_frontlt="COLAC"> -->
             <!-- <a class="navbar-brand" href="#">eStartup</a> -->
-            <p>O REGEPI é um evento organizado pelo Programa de Pós graduação em Gestão Pública  e tem como objetivo discutir as práticas de gestão pública.</p>
           </div>
         </div>
 
@@ -116,39 +117,62 @@
           <div class="footer-logo">
             <p>Apoio</p>
             <div class="row justify-content-center" style="align-items: center">
-              <img src="https://i.imgur.com/yXilw2K.png" ago_frontlt="EMBRAPA" style="height: 50px">
-              <img src="https://i.imgur.com/4kX6tXZ.png" ago_frontlt="CGU" style="height: 76px">
-              <img src="https://i.imgur.com/j5fEnmo.png" ago_frontlt="TCU" style="height: 60px">
-              <img src="https://i.imgur.com/U9hxHgf.png" ago_frontlt="Ministério da Fazenda" style="height: 50px">
+              <div>
+                <img src="https://i.imgur.com/UonIYBt.png" ago_frontlt="CRA-PI" style="height: 90px">
+                <img src="https://i.imgur.com/W1PR5iH.png" ago_frontlt="EMBRAPA" style="height: 50px">
+                <img src="https://i.imgur.com/4kX6tXZ.png" ago_frontlt="CGU" style="height: 76px">
+              </div>
+              <div>
+                <img src="https://i.imgur.com/HW8Q8bW.png" ago_frontlt="TCU" style="height: 80px">
+                <img src="https://i.imgur.com/H6K6Fyw.png" ago_frontlt="Ministério da Fazenda" style="height: 50px">
+              </div>
+              <!-- https://i.imgur.com/yXilw2K.png -->
+              
+              <!-- https://i.imgur.com/j5fEnmo.png -->
+              <!-- https://i.imgur.com/U9hxHgf.png -->
             </div>
+          </div>
+        </div>
+      </div>
+      <br />
+      <br />
+      <div class="row">
+        <div class="col-md-6 col-lg-6">
+          <div class="footer-logo">
+            <p>Mapa</p>
             <br />
-            <br />
+            <div class="container-fluid">
+              <div class="row">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3974.2836491697135!2d-42.79967728464082!3d-5.057700596328983!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x78e3977df8aa797%3A0xb4bd89b68e5e57c8!2sCentro+de+Ci%C3%AAncias+Humanas+e+Letras+-+CCHL%2FUFPI!5e0!3m2!1spt-BR!2sbr!4v1529795995837" class="well well-sm cols-xs-12" width="680" height="450" frameborder="0" style="border:0" allowfullscreen="">
+                </iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-6">
+          <div class="footer-logo">
+            <p>Nossas Redes Sociais</p>
             <p>
-              <i class="fa fa-envelope"></i> <strong>E-mail:</strong> forumdegestaopublica@ufpi.edu.br
+              <i class="fa fa-instagram"></i> <strong>Instagram:</strong> <a href="https://www.instagram.com/regepippgp/" style="color: white">@regepippgp </a>
             </p>
           </div>
         </div>
-
-      </div>
-            <p style="text-align: center">
-              <a href="http://www.ppgp.ufpi.br/" style="color:white;text-decoration-color: red">REGEPI 2018</a>
-            </p>
     </div>
-
-    <div class="copyrights">
-      <div class="container">
-        <p class="text-center">&copy; Copyrights <i class="fa fa-cogs"></i> STI-UFPI. Direitos Reservados.</p>
-        <div class="credits">
-          <!--
-            All the links in the footer should remain intact.
-            You can delete the links only if you purchased the pro version.
-            Licensing information: https://bootstrapmade.com/license/
-            Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=eStartup
-          -->
-          Template <a href="https://bootstrapmade.com/" target="_blank">BootstrapMade</a>
-        </div>
+  </div>
+  <div class="copyrights">
+    <div class="container">
+      <p class="text-center">&copy; Copyrights <i class="fa fa-cogs"></i> STI-UFPI. Direitos Reservados.</p>
+      <div class="credits">
+        <!--
+          All the links in the footer should remain intact.
+          You can delete the links only if you purchased the pro version.
+          Licensing information: https://bootstrapmade.com/license/
+          Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=eStartup
+        -->
+        Template <a href="https://bootstrapmade.com/" target="_blank">BootstrapMade</a>
       </div>
     </div>
+  </div>
 
   </footer>
 
